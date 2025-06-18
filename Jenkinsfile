@@ -1,9 +1,7 @@
 pipeline{
-    agent{
-        docker{
+    agent docker{
             image 'my-python-app'
         }
-    }
     stages{
         stage('Run Python Script'){
             steps{
